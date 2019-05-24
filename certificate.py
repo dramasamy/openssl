@@ -1,3 +1,4 @@
+# Python3
 from OpenSSL import crypto
 import os, sys, base64
 
@@ -45,7 +46,7 @@ class Certificate(object):
 
     def _write_file(self, filename, content):
         if os.path.exists(filename):
-            print("File {filename} already exists, aborting")
+            print(f"File {filename} already exists, aborting")
             sys.exit(1)
         else:
             with open(filename, "w") as file:
