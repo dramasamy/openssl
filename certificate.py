@@ -1,5 +1,5 @@
 from OpenSSL import crypto
-import os, sys
+import os, sys, base64
 
 class Certificate(object):
     """docstring for Certificate"""
